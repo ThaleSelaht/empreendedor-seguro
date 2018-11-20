@@ -30,6 +30,13 @@ body {
   body {
 padding: 0; } }
 
+#empreendedor-seguro, #beneficios {
+  background: #f4d35e;
+}
+#patrocinadores, #seja-um-parceiro {
+  background: #333;
+}
+
 /***** NAVIGATION *****/
 .navigation__checkbox {
   display: none; }
@@ -234,9 +241,17 @@ position: relative; }
 .btn--white::after {
   background-color: #fff; }
 
-#empreendedor-seguro, #beneficios {
-  background: #f4d35e;
+/***** SECONDARY HEADER *****/
+
+.secondary-header {
+  padding: 10rem 0;
+  color:#333333;
+  font-size: 3rem;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  text-align: center;
 }
-#patrocinadores, #seja-um-parceiro {
-  background: #333;
+
+.secondary-header-white {
+  color:#fff;
 }
