@@ -11,5 +11,6 @@ document.querySelector('.navigation__checkbox').addEventListener('click', functi
 })
 
 function toggleMenu() {
-  document.querySelector(".navigation__background").classList.toggle('navigation__background-tog');document.querySelector(".navigation__nav").classList.toggle('navigation__nav-tog')
+  document.querySelector(".navigation__background").classList.toggle('navigation__background-tog');
+  document.querySelector(".navigation__nav").classList.toggle('navigation__nav-tog')
 } 

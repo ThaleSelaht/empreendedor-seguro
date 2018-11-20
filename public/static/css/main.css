@@ -127,12 +127,12 @@ padding: 0; } }
   color: #ee964b;
   transform: translateX(1rem); }
 
-.navigation__checkbox:checked ~ .navigation__background {
+/* .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%; } */
 
 .navigation__icon {
   position: relative;
@@ -247,7 +247,7 @@ position: relative; }
 
 /***** SECONDARY HEADER *****/
 .secondary-header {
-  padding: 10rem 0;
+  padding-bottom: 10rem;
   color:#333333;
   font-size: 3rem;
   font-family: "Merriweather", sans-serif;
@@ -261,9 +261,22 @@ position: relative; }
   text-align: left;
 }
 
+#empreendedor-seguro, #palestrantes, #beneficios, #como-chegar {
+  padding: 10rem 0;
+}
+#patrocinadores{
+  padding-top: 10rem;
+}
+#patrocinadores img{
+  width: 100%;
+  height: auto;
+}
+#patrocinadores img:nth-of-type(3){
+  -webkit-box-shadow: 0px 0px 40px 14px #FFF; 
+  box-shadow: 0px 0px 40px 14px #FFF;
+}
 /***** EMPREENDEDOR SEGURO *****/
 #empreendedor-seguro p{
-  padding: 10rem 0;
   font-size: 2.2rem;
   font-family: "Roboto", sans-serif;
   text-indent: 8.8rem;
@@ -361,9 +374,6 @@ position: relative; }
   width: 77.66666667%; 
   padding: 20rem 0 0 6rem;
 }
-.popup__right ul {
-
-}
 .popup__right li{
   font-size: 2rem;
   list-style: none;
@@ -383,7 +393,6 @@ position: relative; }
   display: block;
   width: 100%;
 }
-
 .popup__text {
   font-size: 1.4rem;
   margin-bottom: 4rem;
@@ -401,12 +410,10 @@ position: relative; }
   -webkit-hyphens: auto;
   hyphens: auto;
 }
-
 .popup:target {
   opacity: 1;
   visibility: visible;
 }
-
 .popup__close:link, .popup__close:visited {
   color: #777;
   position: absolute;
@@ -418,16 +425,20 @@ position: relative; }
   transition: all .2s;
   line-height: 1; 
 }
-
 .popup__close:hover {
   color: #005c3d;
 }
-
 .popup:target .popup__content {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
-
+.navigation__background-tog {
+  transform: scale(80);
+}
+.navigation__nav-tog{
+  width:100%;
+  opacity: 1;
+}
 @media (max-width: 767px) {
   .popup {
     min-height: 100%;
