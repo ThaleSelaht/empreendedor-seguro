@@ -242,16 +242,24 @@ position: relative; }
   background-color: #fff; }
 
 /***** SECONDARY HEADER *****/
-
 .secondary-header {
   padding: 10rem 0;
   color:#333333;
   font-size: 3rem;
   font-family: "Merriweather", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
 }
-
 .secondary-header-white {
   color:#fff;
+}
+#empreendedor-seguro .secondary-header {
+  text-align: left;
+}
+
+/***** EMPREENDEDOR SEGURO *****/
+#empreendedor-seguro p{
+  padding: 10rem 0;
+  font-size: 2.2rem;
+  font-family: "Roboto", sans-serif;
 }
