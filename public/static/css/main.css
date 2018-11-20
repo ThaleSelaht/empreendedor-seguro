@@ -37,6 +37,10 @@ padding: 0; } }
   background: #333;
 }
 
+#como-chegar{
+  padding-bottom: 10rem;
+}
+
 /***** NAVIGATION *****/
 .navigation__checkbox {
   display: none; }
@@ -449,4 +453,11 @@ position: relative; }
   .pdf img { 
     width: 45%;
   }
+}
+.gmap_canvas {
+  margin: 0 auto;
+  position: absolute;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
 }
