@@ -36,7 +36,6 @@ padding: 0; } }
 #patrocinadores, #seja-um-parceiro {
   background: #333;
 }
-
 #como-chegar{
   padding-bottom: 10rem;
 }
@@ -258,11 +257,11 @@ position: relative; }
   text-align: left;
 }
 
-#empreendedor-seguro, #palestrantes, #beneficios, #como-chegar {
-  padding: 10rem 0;
+#empreendedor-seguro, #palestrantes, #beneficios {
+  padding: 8rem 0;
 }
-#patrocinadores, #palestrantes{
-  padding-top: 10rem;
+#patrocinadores, #palestrantes, #programacao{
+  padding-top: 8rem;
 }
 #patrocinadores img{
   width: 100%;
@@ -441,6 +440,9 @@ position: relative; }
   opacity: 1;
   z-index: 1500;
 }
+.table{
+  font-size: 2.4rem;
+}
 @media (max-width: 767px) {
   .popup {
     min-height: 100%;
@@ -466,6 +468,16 @@ position: relative; }
   .pdf img { 
     width: 45%;
   }
+  .navigation__button {
+    top: 3rem;
+    right: 3rem;
+  }
+  #patrocinadores img{
+    margin-bottom: 4rem;
+  }
+  .header__text-box{
+    top: 55%;
+  }
 }
 .gmap_canvas {
   margin: 0 auto;
@@ -473,4 +485,5 @@ position: relative; }
   top:0;
   left:50%;
   transform: translateX(-50%);
+  width:100%!important;
 }
