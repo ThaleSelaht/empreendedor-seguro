@@ -90,9 +90,10 @@ padding: 0; } }
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1500;
+  z-index: -1;
   opacity: 0;
   width: 0;
+  height:0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .navigation__list {
@@ -185,10 +186,6 @@ position: relative; }
 @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
   .header {
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
-@media only screen and (max-width: 37.5em) {
-  .header {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
 .header__logo-box {
   position: absolute;
   top: 4rem;
@@ -239,11 +236,11 @@ position: relative; }
   outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-.btn--white {
-  background-color: #fff;
-  color: #777; }
-.btn--white::after {
-  background-color: #fff; }
+.btn--orange {
+  background-color: #F4D35E;
+  color: #0E1499; }
+.btn--orange::after {
+  background-color: #; }
 
 /***** SECONDARY HEADER *****/
 .secondary-header {
@@ -264,7 +261,7 @@ position: relative; }
 #empreendedor-seguro, #palestrantes, #beneficios, #como-chegar {
   padding: 10rem 0;
 }
-#patrocinadores{
+#patrocinadores, #palestrantes{
   padding-top: 10rem;
 }
 #patrocinadores img{
@@ -282,11 +279,11 @@ position: relative; }
   text-indent: 8.8rem;
   color: #333;
 }
-
-/***** PALESTRANTE BOX *****/
-#palestrantes{
-  padding-bottom: 10rem;
+#empreendedor-seguro p a{
+  color: #ee964b;
+  font-weight: 800;
 }
+/***** PALESTRANTE BOX *****/
 .palestrante__box {
   width: 100%;
   height: auto;
@@ -357,7 +354,7 @@ position: relative; }
 }
 .popup__left span {
   display: block;
-  color: #005c3d;  
+  color: #ee964b;  
 }
 .popup__left span:nth-child(1) {
   font-size: 6.2rem;
@@ -373,6 +370,9 @@ position: relative; }
 .popup__right { 
   width: 77.66666667%; 
   padding: 20rem 0 0 6rem;
+}
+.popup__right p{
+  font-size:2rem;
 }
 .popup__right li{
   font-size: 2rem;
@@ -437,7 +437,9 @@ position: relative; }
 }
 .navigation__nav-tog{
   width:100%;
+  height:100%;
   opacity: 1;
+  z-index: 1500;
 }
 @media (max-width: 767px) {
   .popup {
