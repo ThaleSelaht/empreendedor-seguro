@@ -25,7 +25,9 @@ body {
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
-  color: #777;}
+  color: #777;
+  overflow: none;
+}
 @media only screen and (max-width: 56.25em) {
   body {
 padding: 0; } }
@@ -263,6 +265,9 @@ position: relative; }
 #patrocinadores, #palestrantes, #programacao{
   padding-top: 8rem;
 }
+#patrocinadores {
+  padding-bottom: 8rem;
+}
 #patrocinadores img{
   width: 100%;
   height: auto;
@@ -443,6 +448,10 @@ position: relative; }
 .table{
   font-size: 2.4rem;
 }
+
+.table th{
+  background: #F4D35E;
+}
 @media (max-width: 767px) {
   .popup {
     min-height: 100%;
@@ -478,6 +487,10 @@ position: relative; }
   .header__text-box{
     top: 55%;
   }
+
+  .navigation__link:link, .navigation__link:visited {
+    font-size: 2rem;  
+  }
 }
 .gmap_canvas {
   margin: 0 auto;
@@ -485,5 +498,8 @@ position: relative; }
   top:0;
   left:50%;
   transform: translateX(-50%);
+  width:100%!important;
+}
+.mapouter{
   width:100%!important;
 }
